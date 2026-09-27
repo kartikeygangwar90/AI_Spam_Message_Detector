@@ -1,8 +1,13 @@
 import pandas as pd
+import nltk
 
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
+
+nltk.download("punkt")
+nltk.download("punkt_tab")
+nltk.download("stopwords")
 
 # Intializing NLP tools
 stop_words = set(stopwords.words("english"))
